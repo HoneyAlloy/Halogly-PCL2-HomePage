@@ -1,0 +1,72 @@
+<!--
+公告
+-->
+<local:MyCard Title="公告" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap"
+                   Text="服主B站UID：357389792 &#xA;QQ群：1047233086 &#xA;开黑啦：https://kaihei.co/rHZcjK &#xA;这里是公告哦。" />
+        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                   Text="点击刷新" EventType="刷新主页" />
+    </StackPanel>
+</local:MyCard>
+
+<!--
+选择游戏版本界面
+-->    
+<local:MyCard Title="选择游戏版本" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap"
+                   Text="选择你要进入的游戏版本。&#xA;有正版请选择Minecraft；无正版请选择LittleSkin。" />
+        <local:MyHint Margin="0,5,0,0" IsWarn="false"
+                   Text="Minecraft为正版登录；LittleSkin为外置登录。" />
+        <TextBlock Margin="0,10,0,15" FontSize="15" Foreground="#8C7721"
+                   Text="原版1.17.1（已添加OptiFine）" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Halogly (Minecraft)" EventType="启动游戏" EventData="Halogly (Minecraft)" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Halogly (LittleSkin)" EventType="启动游戏" EventData="Halogly (LittleSkin)" />
+        </StackPanel>
+        <TextBlock Margin="0,15,0,15" FontSize="15" Foreground="#8C7721"
+                   Text="原版1.17.1（已添加Fabric）" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Fabric (Minecraft)" EventType="启动游戏" EventData="Halogly Fabric (Minecraft)" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Fabric (LittleSkin)" EventType="启动游戏" EventData="Halogly Fabric (LittleSkin)" />
+        </StackPanel>
+        <TextBlock Margin="0,15,0,15" FontSize="15" Foreground="#8C7721"
+                   Text="模组1.16.5（已添加Forge+模组）" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Forge (Minecraft)" EventType="启动游戏" EventData="Halogly mod (LittleSkin)" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Forge (LittleSkin)" EventType="启动游戏" EventData="Halogly mod (LittleSkin)" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<!--
+<local:MyListItem Margin="-5,15,-5,0"
+                  Logo="" Title="" Info=""
+                  EventType="打开网页" EventData="" Type="Clickable" />
+-->
+<local:MyCard Title="其他有用的网站" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/e/e6/Site-logo.png/revision/latest?cb=20211012040035" Title="Minecraft Wiki" Info="Minecraft维基百科"
+                          EventType="打开网页" EventData="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                  Logo="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/a/af/Chest_JE1_BE2.png/revision/latest/scale-to-width-down/32?cb=20190920042030" Title="MCBBS" Info="我的世界中文论坛"
+                  EventType="打开网页" EventData="https://www.mcbbs.net/" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                  Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！"
+                  EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                  Logo="https://www.kaiheila.cn/favicon.ico" Title="开黑啦" Info="优质游戏语音软件"
+                  EventType="打开网页" EventData="https://www.kaiheila.cn/app/discover" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                  Logo="https://www.oracle.com/asset/web/favicons/favicon-32.png" Title="Java" Info="Java下载"
+                  EventType="打开网页" EventData="https://www.oracle.com/java/technologies/downloads/" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
